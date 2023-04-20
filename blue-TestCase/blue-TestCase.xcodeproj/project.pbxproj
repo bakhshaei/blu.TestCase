@@ -14,6 +14,11 @@
 		277CFA4829F0E00200C4B45F /* blue_TestCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA4729F0E00200C4B45F /* blue_TestCaseTests.swift */; };
 		277CFA5229F0E00200C4B45F /* blue_TestCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA5129F0E00200C4B45F /* blue_TestCaseUITests.swift */; };
 		277CFA5429F0E00200C4B45F /* blue_TestCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA5329F0E00200C4B45F /* blue_TestCaseUITestsLaunchTests.swift */; };
+		277CFA6229F0E16F00C4B45F /* TransferDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6129F0E16F00C4B45F /* TransferDestination.swift */; };
+		277CFA6629F0E23600C4B45F /* TransferDestinationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6529F0E23600C4B45F /* TransferDestinationListViewModel.swift */; };
+		277CFA6829F0E26E00C4B45F /* TransferDestinationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */; };
+		277CFA6A29F0E31200C4B45F /* TransferDestinationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6929F0E31200C4B45F /* TransferDestinationService.swift */; };
+		277CFA6C29F0E61D00C4B45F /* blue_TestCaseTransferDestinationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6B29F0E61D00C4B45F /* blue_TestCaseTransferDestinationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		277CFA4D29F0E00200C4B45F /* blue-TestCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "blue-TestCaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277CFA5129F0E00200C4B45F /* blue_TestCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue_TestCaseUITests.swift; sourceTree = "<group>"; };
 		277CFA5329F0E00200C4B45F /* blue_TestCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue_TestCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		277CFA6129F0E16F00C4B45F /* TransferDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestination.swift; sourceTree = "<group>"; };
+		277CFA6529F0E23600C4B45F /* TransferDestinationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationListViewModel.swift; sourceTree = "<group>"; };
+		277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationListView.swift; sourceTree = "<group>"; };
+		277CFA6929F0E31200C4B45F /* TransferDestinationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationService.swift; sourceTree = "<group>"; };
+		277CFA6B29F0E61D00C4B45F /* blue_TestCaseTransferDestinationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue_TestCaseTransferDestinationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,9 @@
 		277CFA3529F0E00000C4B45F /* blue-TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				277CFA6429F0E20400C4B45F /* ViewModel */,
+				277CFA6329F0E1FE00C4B45F /* View */,
+				277CFA6029F0E14B00C4B45F /* Model */,
 				277CFA3629F0E00000C4B45F /* blue_TestCaseApp.swift */,
 				277CFA3829F0E00000C4B45F /* ContentView.swift */,
 				277CFA3A29F0E00100C4B45F /* Assets.xcassets */,
@@ -114,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				277CFA4729F0E00200C4B45F /* blue_TestCaseTests.swift */,
+				277CFA6B29F0E61D00C4B45F /* blue_TestCaseTransferDestinationService.swift */,
 			);
 			path = "blue-TestCaseTests";
 			sourceTree = "<group>";
@@ -125,6 +139,31 @@
 				277CFA5329F0E00200C4B45F /* blue_TestCaseUITestsLaunchTests.swift */,
 			);
 			path = "blue-TestCaseUITests";
+			sourceTree = "<group>";
+		};
+		277CFA6029F0E14B00C4B45F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				277CFA6129F0E16F00C4B45F /* TransferDestination.swift */,
+				277CFA6929F0E31200C4B45F /* TransferDestinationService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		277CFA6329F0E1FE00C4B45F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		277CFA6429F0E20400C4B45F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				277CFA6529F0E23600C4B45F /* TransferDestinationListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277CFA6629F0E23600C4B45F /* TransferDestinationListViewModel.swift in Sources */,
 				277CFA3929F0E00000C4B45F /* ContentView.swift in Sources */,
+				277CFA6A29F0E31200C4B45F /* TransferDestinationService.swift in Sources */,
+				277CFA6229F0E16F00C4B45F /* TransferDestination.swift in Sources */,
+				277CFA6829F0E26E00C4B45F /* TransferDestinationListView.swift in Sources */,
 				277CFA3729F0E00000C4B45F /* blue_TestCaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277CFA4829F0E00200C4B45F /* blue_TestCaseTests.swift in Sources */,
+				277CFA6C29F0E61D00C4B45F /* blue_TestCaseTransferDestinationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
