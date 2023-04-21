@@ -24,7 +24,7 @@ class TransferDestinationService: TransferDestinationServiceProtocol {
     private let session: URLSession = .shared
     
     /// A variable to store current page that is already fetched.
-    private var pageCounter = 0
+    private var pageCounter = 1
     
     /// Fetch data from the API for `n`th page.
     /// - Parameter page: If an spacific page number passed the API will call for that page number. Otherwise an internal counter fetched pages and automatically increase by each successful fetch.

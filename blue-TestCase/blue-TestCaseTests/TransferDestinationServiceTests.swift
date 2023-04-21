@@ -8,11 +8,22 @@
 import XCTest
 @testable import blue_TestCase
 
-final class blue_TestCaseTransferDestinationService: XCTestCase {
+class TransferDestinationServiceTests: XCTestCase {
     
-    private var service : TransferDestinationServiceProtocol = TransferDestinationService()
+    private var service : TransferDestinationService!
     
+    //MARK: - setUp and tearDown
+    override func setUp() {
+        super.setUp()
+        service = TransferDestinationService()
+    }
     
+    override func tearDown() {
+        service = nil
+        super.tearDown()
+    }
+    
+    //MARK: - Tests for `loadData(fromPage:)`
     func test_FetchListSuccessfully() async {
         service = TransferDestinationService()
         
