@@ -34,7 +34,7 @@ class TransferDestinationServiceTests: XCTestCase {
             
         }
         catch {
-            XCTAssertThrowsError(error)
+            XCTAssertFalse(true, error.localizedDescription)
         }
     }
     func test_FetchListForSpecificPageNumberSuccessfully() async {
@@ -47,7 +47,7 @@ class TransferDestinationServiceTests: XCTestCase {
             
         }
         catch {
-            XCTAssertThrowsError(error)
+            XCTAssertFalse(true, error.localizedDescription)
         }
     }
     

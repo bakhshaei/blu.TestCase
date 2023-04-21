@@ -7,14 +7,27 @@
 
 import SwiftUI
 
-struct TransferDestinationListView: View {
+struct TransferDestinationListView<ViewModel: TransferDestinationListViewModelProtocol>: View {
+    
+    @StateObject var viewModel : ViewModel //TransferDestinationListViewModelProtocol
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(viewModel.destinationList) { item in
+                NavigationLink(value: item) {
+                    TransferDestinationRowView(dataModel: item)
+                }
+                .navigationTitle("All")
+                .navigationDestination(for: TransferDestinationDataModel.self) { selectedItem in
+                    TransferDestinationDetailView(dataModel: selectedItem)
+                }
+            }
+        }
     }
 }
 
 struct TransferDestinationListView_Previews: PreviewProvider {
     static var previews: some View {
-        TransferDestinationListView()
+        TransferDestinationListView(viewModel: TransferDestinationlistViewModel_Preview())
     }
 }

@@ -34,6 +34,7 @@ struct Card: Decodable {
 
 //MARK: - DataModel
 struct TransferDestinationDataModel : Identifiable, Hashable, Equatable {
+    
     var id          = UUID()
     var full_name   : String?
     var avatar_url  : String?
@@ -41,10 +42,32 @@ struct TransferDestinationDataModel : Identifiable, Hashable, Equatable {
     
     var isFavorite  : Bool = false
     
+    //MARK: Initializer
     init(from model: TransferDestination) {
         full_name   = model.person.full_name
         avatar_url  = model.person.avatar
         card_number = model.card.card_number
     }
     
+    internal init(id: UUID = UUID(),
+                  full_name: String? = nil,
+                  avatar_url: String? = nil,
+                  card_number: String? = nil,
+                  isFavorite: Bool = false) {
+        self.id = id
+        self.full_name = full_name
+        self.avatar_url = avatar_url
+        self.card_number = card_number
+        self.isFavorite = isFavorite
+    }
+}
+
+
+extension TransferDestinationDataModel {
+    ///Defining default value to use in Previews
+    static var `preview` : TransferDestinationDataModel {
+        return .init(full_name: "myFullname_Preview",
+                     avatar_url: "https://www.dropbox.com/s/64y9lcnca22p1jx/avatar1.png?dl=1",
+                     card_number: "1234567890")
+    }
 }

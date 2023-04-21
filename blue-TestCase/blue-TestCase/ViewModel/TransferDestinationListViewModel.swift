@@ -40,3 +40,12 @@ import Foundation
         destinationList.append(contentsOf: dataModels)
     }
 }
+//Used in Preview
+class TransferDestinationlistViewModel_Preview: TransferDestinationListViewModelProtocol {
+    var destinationList: Array<TransferDestinationDataModel>
+    
+    func fetchData() async { /*Do Nothing in Preview*/ }
+    
+    init() { self.destinationList = Array(repeating: .preview, count: 10) }
+    
+}

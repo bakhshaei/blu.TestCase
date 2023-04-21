@@ -22,6 +22,8 @@
 		277CFA6829F0E26E00C4B45F /* TransferDestinationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */; };
 		277CFA6A29F0E31200C4B45F /* TransferDestinationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6929F0E31200C4B45F /* TransferDestinationService.swift */; };
 		277CFA6C29F0E61D00C4B45F /* TransferDestinationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6B29F0E61D00C4B45F /* TransferDestinationServiceTests.swift */; };
+		27EE795229F286BA00D7DEAF /* TransferDestinationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EE795129F286BA00D7DEAF /* TransferDestinationRowView.swift */; };
+		27EE795429F294B800D7DEAF /* TransferDestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EE795329F294B800D7DEAF /* TransferDestinationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationListView.swift; sourceTree = "<group>"; };
 		277CFA6929F0E31200C4B45F /* TransferDestinationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationService.swift; sourceTree = "<group>"; };
 		277CFA6B29F0E61D00C4B45F /* TransferDestinationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationServiceTests.swift; sourceTree = "<group>"; };
+		27EE795129F286BA00D7DEAF /* TransferDestinationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationRowView.swift; sourceTree = "<group>"; };
+		27EE795329F294B800D7DEAF /* TransferDestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */,
+				27EE795129F286BA00D7DEAF /* TransferDestinationRowView.swift */,
+				27EE795329F294B800D7DEAF /* TransferDestinationDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,7 +278,9 @@
 				277CFA3929F0E00000C4B45F /* ContentView.swift in Sources */,
 				277CFA6A29F0E31200C4B45F /* TransferDestinationService.swift in Sources */,
 				277CFA6229F0E16F00C4B45F /* TransferDestination.swift in Sources */,
+				27EE795429F294B800D7DEAF /* TransferDestinationDetailView.swift in Sources */,
 				277CFA6829F0E26E00C4B45F /* TransferDestinationListView.swift in Sources */,
+				27EE795229F286BA00D7DEAF /* TransferDestinationRowView.swift in Sources */,
 				2769420029F16AA30097EF14 /* TransferDestinationListViewModel.swift in Sources */,
 				277CFA3729F0E00000C4B45F /* blue_TestCaseApp.swift in Sources */,
 			);
