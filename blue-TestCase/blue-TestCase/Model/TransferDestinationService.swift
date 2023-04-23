@@ -10,7 +10,7 @@ import Foundation
 
 //MARK: - Service
 protocol TransferDestinationServiceProtocol {
-    func loadData(fromPage page: Int?) async throws -> [TransferDestination]?
+    func loadData(fromPage page: Int) async throws -> [TransferDestination]?
 }
 
 enum TransferDestinationServiceError: Error {
@@ -23,15 +23,12 @@ class TransferDestinationService: TransferDestinationServiceProtocol {
     private let baseURL = URL(string: "https://4e6774cc-4d63-41b2-8003-336545c0a86d.mock.pstmn.io/transfer-list/")
     private let session: URLSession = .shared
     
-    /// A variable to store current page that is already fetched.
-    private var pageCounter = 1
     
     /// Fetch data from the API for `n`th page.
-    /// - Parameter page: If an spacific page number passed the API will call for that page number. Otherwise an internal counter fetched pages and automatically increase by each successful fetch.
+    /// - Parameter page: If an spacific page number passed the API will call for that page number.
     /// - Returns: List of fetched objects.
-    func loadData(fromPage page: Int? = nil) async throws -> [TransferDestination]? {
-        let pageNo = page ?? pageCounter
-        guard let url = URL(string: String(pageNo), relativeTo: baseURL) else {
+    func loadData(fromPage page: Int) async throws -> [TransferDestination]? {
+        guard let url = URL(string: String(page), relativeTo: baseURL) else {
             throw TransferDestinationServiceError.invalidURL
         }
         
@@ -43,7 +40,6 @@ class TransferDestinationService: TransferDestinationServiceProtocol {
                 throw TransferDestinationServiceError.errorResponseStatusCode((response as? HTTPURLResponse)?.statusCode )
             }
             if let object = try? JSONDecoder().decode([TransferDestination].self, from: data) {
-                pageCounter += 1
                 return object
             }
             return nil

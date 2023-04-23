@@ -13,7 +13,7 @@ class MockTrasnferDestinationService : TransferDestinationServiceProtocol {
     var result : [TransferDestination]?
     var error : Error?
     
-    func loadData(fromPage page: Int?) async throws -> [blue_TestCase.TransferDestination]? {
+    func loadData(fromPage page: Int) async throws -> [blue_TestCase.TransferDestination]? {
         if let error {
             throw error
         }

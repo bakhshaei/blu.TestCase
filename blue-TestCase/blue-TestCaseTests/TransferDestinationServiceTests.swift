@@ -28,7 +28,7 @@ class TransferDestinationServiceTests: XCTestCase {
         service = TransferDestinationService()
         
         do {
-            if let datas = try await service.loadData(fromPage: nil) {
+            if let datas = try await service.loadData(fromPage: 1) {
                 XCTAssertGreaterThan(datas.count, 0)
             }
             

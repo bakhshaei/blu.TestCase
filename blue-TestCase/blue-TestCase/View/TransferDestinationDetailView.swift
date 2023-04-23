@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TransferDestinationDetailView: View {
-    @State var dataModel : TransferDestinationDataModel
+    @Binding var dataModel : TransferDestinationDataModel
     
     var body: some View {
         VStack {
@@ -25,7 +25,8 @@ struct TransferDestinationDetailView: View {
 }
 
 struct TransferDestinationDetailView_Previews: PreviewProvider {
+    @State static var model = TransferDestinationDataModel.preview
     static var previews: some View {
-        TransferDestinationDetailView(dataModel: .preview)
+        TransferDestinationDetailView(dataModel: $model)
     }
 }

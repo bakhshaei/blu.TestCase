@@ -11,7 +11,11 @@ import SwiftUI
 struct blue_TestCaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TransferDestinationListView(
+                viewModel: TransferDestinationListViewModel(
+                    service: TransferDestinationService()
+                )
+            )
         }
     }
 }

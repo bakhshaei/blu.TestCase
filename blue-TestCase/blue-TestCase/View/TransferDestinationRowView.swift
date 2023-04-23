@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TransferDestinationRowView: View {
-    @State var dataModel : TransferDestinationDataModel
+    
+    @Binding var dataModel : TransferDestinationDataModel
     
     //TODO: Implement LazyLoading for avatar
     
@@ -30,11 +31,20 @@ struct TransferDestinationRowView: View {
             Image(systemName: dataModel.isFavorite ? "star.fill" : "star")
                 .foregroundColor(.yellow)
         }
+        .swipeActions(edge: .leading, allowsFullSwipe: true) {
+            Button{
+                dataModel.isFavorite.toggle()
+            } label: {
+                Image(systemName: "star")
+            }
+        }
+        .padding(.vertical, 4)
     }
 }
 
 struct TransferDestinationRowView_Previews: PreviewProvider {
+    @State static var model = TransferDestinationDataModel.preview
     static var previews: some View {
-        TransferDestinationRowView(dataModel: .preview)
+        TransferDestinationRowView(dataModel: $model)
     }
 }

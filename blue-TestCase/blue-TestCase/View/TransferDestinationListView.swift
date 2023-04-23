@@ -9,25 +9,38 @@ import SwiftUI
 
 struct TransferDestinationListView<ViewModel: TransferDestinationListViewModelProtocol>: View {
     
-    @StateObject var viewModel : ViewModel //TransferDestinationListViewModelProtocol
+    @StateObject var viewModel : ViewModel
     
     var body: some View {
+        
         NavigationStack {
-            List(viewModel.destinationList) { item in
-                NavigationLink(value: item) {
-                    TransferDestinationRowView(dataModel: item)
+            List {
+                ForEach($viewModel.destinationList) { item in
+                    NavigationLink {
+                        TransferDestinationDetailView(dataModel: item)
+                    } label: {
+                        TransferDestinationRowView(dataModel: item)
+                    }
                 }
-                .navigationTitle("All")
-                .navigationDestination(for: TransferDestinationDataModel.self) { selectedItem in
-                    TransferDestinationDetailView(dataModel: selectedItem)
-                }
+                ProgressView()
+                    .task {
+                        await viewModel.fetchData()
+                    }
+            }
+            .navigationTitle("All")
+            .refreshable {
+                await viewModel.clearAndRefreshList()
             }
         }
+        .environmentObject(viewModel)
+        
     }
 }
 
 struct TransferDestinationListView_Previews: PreviewProvider {
     static var previews: some View {
-        TransferDestinationListView(viewModel: TransferDestinationlistViewModel_Preview())
+        let viewModel = TransferDestinationlistViewModel_Preview()
+        TransferDestinationListView(viewModel: viewModel)
+            .environmentObject(viewModel)
     }
 }

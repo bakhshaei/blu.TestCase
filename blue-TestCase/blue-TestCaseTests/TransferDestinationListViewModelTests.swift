@@ -52,4 +52,7 @@ final class TransferDestinationListViewModelTests: XCTestCase {
         await viewModel.fetchData()
         XCTAssertEqual(temp, viewModel.destinationList)
     }
+    //TODO: Write tests for `clearAndRefreshList()`
+    
+    //TODO: Write tests for `TransferDestinationlistViewModel_Preview` if needed
 }
