@@ -33,17 +33,22 @@ struct Card: Decodable {
 
 
 //MARK: - DataModel
-struct TransferDestinationDataModel : Identifiable, Hashable, Equatable {
+struct TransferDestinationDataModel : Identifiable, Hashable, Equatable, Codable {
     
-    var id          = UUID()
+    var id          : UUID
     var full_name   : String?
     var avatar_url  : String?
     var card_number : String?
     
-    var isFavorite  : Bool = false
+    var isFavorite  : Bool = false {
+        didSet {
+            //
+        }
+    }
     
     //MARK: Initializer
     init(from model: TransferDestination) {
+        id          = UUID()
         full_name   = model.person.full_name
         avatar_url  = model.person.avatar
         card_number = model.card.card_number
@@ -60,6 +65,17 @@ struct TransferDestinationDataModel : Identifiable, Hashable, Equatable {
         self.card_number = card_number
         self.isFavorite = isFavorite
     }
+}
+
+extension TransferDestinationDataModel {
+    ///Comparing if two DataModels are similar to each other except their ID. 
+    static func ~= (lhs: TransferDestinationDataModel, rhs: TransferDestinationDataModel) -> Bool {
+        lhs.full_name   == rhs.full_name &&
+        lhs.avatar_url  == rhs.avatar_url &&
+        lhs.card_number == rhs.card_number
+    }
+    
+    
 }
 
 

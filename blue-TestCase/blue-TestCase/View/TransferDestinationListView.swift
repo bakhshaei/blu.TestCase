@@ -14,23 +14,22 @@ struct TransferDestinationListView<ViewModel: TransferDestinationListViewModelPr
     var body: some View {
         
         NavigationStack {
-            List {
-                ForEach($viewModel.destinationList) { item in
-                    NavigationLink {
-                        TransferDestinationDetailView(dataModel: item)
-                    } label: {
-                        TransferDestinationRowView(dataModel: item)
-                    }
+        List {
+            ForEach($viewModel.destinationList) { item in
+                NavigationLink {
+                    TransferDestinationDetailView<FavoriteDestinationViewModel>(dataModel: item)
+                } label: {
+                    TransferDestinationRowView<FavoriteDestinationViewModel>(dataModel: item)
                 }
-                ProgressView()
-                    .task {
-                        await viewModel.fetchData()
-                    }
             }
-            .navigationTitle("All")
-            .refreshable {
-                await viewModel.clearAndRefreshList()
-            }
+            ProgressView()
+                .task {
+                    await viewModel.fetchData()
+                }
+        }
+        .background(Color("contentBackground"))
+        .refreshable {
+            await viewModel.clearAndRefreshList()
         }
         .environmentObject(viewModel)
         
@@ -39,8 +38,7 @@ struct TransferDestinationListView<ViewModel: TransferDestinationListViewModelPr
 
 struct TransferDestinationListView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = TransferDestinationlistViewModel_Preview()
+        let viewModel = TransferDestinationListViewModel(service: MockTransferDestinationService())
         TransferDestinationListView(viewModel: viewModel)
-            .environmentObject(viewModel)
     }
 }

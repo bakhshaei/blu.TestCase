@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct TransferDestinationDetailView: View {
+struct TransferDestinationDetailView<FavViewModel: FavoriteDestinationViewModelProtocol>: View {
+    
     @Binding var dataModel : TransferDestinationDataModel
+    @EnvironmentObject var favViewModel : FavViewModel
     
     var body: some View {
         VStack {
@@ -16,6 +18,7 @@ struct TransferDestinationDetailView: View {
             Text(dataModel.card_number ?? "")
             Button {
                 dataModel.isFavorite.toggle()
+                favViewModel.updateState(for: dataModel)
             } label: {
                 Image(systemName: dataModel.isFavorite ? "star.fill" : "star")
             }
@@ -27,6 +30,6 @@ struct TransferDestinationDetailView: View {
 struct TransferDestinationDetailView_Previews: PreviewProvider {
     @State static var model = TransferDestinationDataModel.preview
     static var previews: some View {
-        TransferDestinationDetailView(dataModel: $model)
+        TransferDestinationDetailView<FavoriteDestinationViewModel>(dataModel: $model)
     }
 }

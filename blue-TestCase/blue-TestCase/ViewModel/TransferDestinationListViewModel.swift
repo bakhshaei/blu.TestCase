@@ -13,7 +13,7 @@ import Foundation
     
     func fetchData() async
     
-    func setFavorite(_ isFavorite: Bool, for item: TransferDestinationDataModel) async
+    //func setFavorite(_ isFavorite: Bool, for item: TransferDestinationDataModel) async
     
     func clearAndRefreshList() async
 }
@@ -36,6 +36,7 @@ import Foundation
         self.service = service
     }
     
+    //MARK: Methods
     /// Fetch the next page.
     func fetchData() async {
         //1: fetch
@@ -56,7 +57,7 @@ import Foundation
         pageCounter = 1
         await fetchData()
     }
-
+    
 }
 
 //Used in Preview
