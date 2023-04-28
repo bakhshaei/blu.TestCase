@@ -49,3 +49,12 @@ class TransferDestinationService: TransferDestinationServiceProtocol {
         }
     }
 }
+
+class MockTransferDestinationService: TransferDestinationServiceProtocol {
+    func loadData(fromPage page: Int = 0) async throws -> [TransferDestination]? {
+        if let mockList : [TransferDestination] = try? FileController().loadFromBundle(withName: "SampleAPIData", extension: "geojson") {
+            return mockList
+        }
+        return nil
+    }
+}

@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271459C829FBEDD30060E180 /* FavoriteDestinationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271459C729FBEDD30060E180 /* FavoriteDestinationListView.swift */; };
+		2725FD3429FB916B00785A5D /* SampleAPIData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2725FD3329FB916B00785A5D /* SampleAPIData.geojson */; };
+		2725FD3629FB918C00785A5D /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725FD3529FB918C00785A5D /* FileController.swift */; };
+		2725FD3829FB9E2000785A5D /* FavoriteDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725FD3729FB9E2000785A5D /* FavoriteDestinationViewModel.swift */; };
+		2725FD3A29FB9F6C00785A5D /* FavoriteDestinationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725FD3929FB9F6C00785A5D /* FavoriteDestinationViewModelTests.swift */; };
 		2769420029F16AA30097EF14 /* TransferDestinationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276941FF29F16AA30097EF14 /* TransferDestinationListViewModel.swift */; };
-		2769420229F16B3C0097EF14 /* TransferDestinationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769420129F16B3C0097EF14 /* TransferDestinationListViewModelTests.swift */; };
-		2769420529F25A120097EF14 /* MockTransferDestinationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769420429F25A120097EF14 /* MockTransferDestinationService.swift */; };
-		2769420829F25FB10097EF14 /* TransferDestination+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769420729F25FB10097EF14 /* TransferDestination+Default.swift */; };
-		2769420A29F2600E0097EF14 /* Person+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769420929F2600E0097EF14 /* Person+Default.swift */; };
-		2769420C29F260710097EF14 /* Card+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769420B29F260710097EF14 /* Card+Default.swift */; };
 		277CFA3729F0E00000C4B45F /* blue_TestCaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA3629F0E00000C4B45F /* blue_TestCaseApp.swift */; };
 		277CFA3929F0E00000C4B45F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA3829F0E00000C4B45F /* ContentView.swift */; };
 		277CFA3B29F0E00100C4B45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277CFA3A29F0E00100C4B45F /* Assets.xcassets */; };
 		277CFA3E29F0E00100C4B45F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277CFA3D29F0E00100C4B45F /* Preview Assets.xcassets */; };
-		277CFA4829F0E00200C4B45F /* blue_TestCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA4729F0E00200C4B45F /* blue_TestCaseTests.swift */; };
 		277CFA6229F0E16F00C4B45F /* TransferDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6129F0E16F00C4B45F /* TransferDestination.swift */; };
 		277CFA6829F0E26E00C4B45F /* TransferDestinationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */; };
 		277CFA6A29F0E31200C4B45F /* TransferDestinationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6929F0E31200C4B45F /* TransferDestinationService.swift */; };
-		277CFA6C29F0E61D00C4B45F /* TransferDestinationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CFA6B29F0E61D00C4B45F /* TransferDestinationServiceTests.swift */; };
 		27EE795229F286BA00D7DEAF /* TransferDestinationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EE795129F286BA00D7DEAF /* TransferDestinationRowView.swift */; };
 		27EE795429F294B800D7DEAF /* TransferDestinationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EE795329F294B800D7DEAF /* TransferDestinationDetailView.swift */; };
+		AD2C75BA29F81E8400EA9240 /* blue_TestCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C75B229F81E6500EA9240 /* blue_TestCaseTests.swift */; };
+		AD2C75BC29F81EA500EA9240 /* MockTransferDestinationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C75B029F81E6500EA9240 /* MockTransferDestinationService.swift */; };
+		AD2C75BD29F81EA500EA9240 /* Person+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C75AC29F81E6500EA9240 /* Person+Default.swift */; };
+		AD2C75BE29F81EA500EA9240 /* TransferDestinationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C75B129F81E6500EA9240 /* TransferDestinationServiceTests.swift */; };
+		AD2C75BF29F81EA500EA9240 /* Card+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C75AD29F81E6500EA9240 /* Card+Default.swift */; };
+		AD2C75C029F81EA500EA9240 /* TransferDestinationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C75AA29F81E6500EA9240 /* TransferDestinationListViewModelTests.swift */; };
+		AD2C75C129F81EA500EA9240 /* TransferDestination+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C75AE29F81E6500EA9240 /* TransferDestination+Default.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,26 +42,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271459C729FBEDD30060E180 /* FavoriteDestinationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDestinationListView.swift; sourceTree = "<group>"; };
+		2725FD3329FB916B00785A5D /* SampleAPIData.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleAPIData.geojson; sourceTree = "<group>"; };
+		2725FD3529FB918C00785A5D /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
+		2725FD3729FB9E2000785A5D /* FavoriteDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDestinationViewModel.swift; sourceTree = "<group>"; };
+		2725FD3929FB9F6C00785A5D /* FavoriteDestinationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDestinationViewModelTests.swift; sourceTree = "<group>"; };
 		276941FD29F164A50097EF14 /* blue-TestCase.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "blue-TestCase.xctestplan"; sourceTree = "<group>"; };
 		276941FF29F16AA30097EF14 /* TransferDestinationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationListViewModel.swift; sourceTree = "<group>"; };
-		2769420129F16B3C0097EF14 /* TransferDestinationListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationListViewModelTests.swift; sourceTree = "<group>"; };
-		2769420429F25A120097EF14 /* MockTransferDestinationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransferDestinationService.swift; sourceTree = "<group>"; };
-		2769420729F25FB10097EF14 /* TransferDestination+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferDestination+Default.swift"; sourceTree = "<group>"; };
-		2769420929F2600E0097EF14 /* Person+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Default.swift"; sourceTree = "<group>"; };
-		2769420B29F260710097EF14 /* Card+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+Default.swift"; sourceTree = "<group>"; };
 		277CFA3329F0E00000C4B45F /* blue-TestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blue-TestCase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277CFA3629F0E00000C4B45F /* blue_TestCaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue_TestCaseApp.swift; sourceTree = "<group>"; };
 		277CFA3829F0E00000C4B45F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		277CFA3A29F0E00100C4B45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277CFA3D29F0E00100C4B45F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		277CFA4329F0E00200C4B45F /* blue-TestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "blue-TestCaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		277CFA4729F0E00200C4B45F /* blue_TestCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue_TestCaseTests.swift; sourceTree = "<group>"; };
 		277CFA6129F0E16F00C4B45F /* TransferDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestination.swift; sourceTree = "<group>"; };
 		277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationListView.swift; sourceTree = "<group>"; };
 		277CFA6929F0E31200C4B45F /* TransferDestinationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationService.swift; sourceTree = "<group>"; };
-		277CFA6B29F0E61D00C4B45F /* TransferDestinationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationServiceTests.swift; sourceTree = "<group>"; };
 		27EE795129F286BA00D7DEAF /* TransferDestinationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationRowView.swift; sourceTree = "<group>"; };
 		27EE795329F294B800D7DEAF /* TransferDestinationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDestinationDetailView.swift; sourceTree = "<group>"; };
+		AD2C75AA29F81E6500EA9240 /* TransferDestinationListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDestinationListViewModelTests.swift; sourceTree = "<group>"; };
+		AD2C75AC29F81E6500EA9240 /* Person+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+Default.swift"; sourceTree = "<group>"; };
+		AD2C75AD29F81E6500EA9240 /* Card+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Card+Default.swift"; sourceTree = "<group>"; };
+		AD2C75AE29F81E6500EA9240 /* TransferDestination+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferDestination+Default.swift"; sourceTree = "<group>"; };
+		AD2C75B029F81E6500EA9240 /* MockTransferDestinationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTransferDestinationService.swift; sourceTree = "<group>"; };
+		AD2C75B129F81E6500EA9240 /* TransferDestinationServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferDestinationServiceTests.swift; sourceTree = "<group>"; };
+		AD2C75B229F81E6500EA9240 /* blue_TestCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blue_TestCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,26 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				276941FF29F16AA30097EF14 /* TransferDestinationListViewModel.swift */,
+				2725FD3729FB9E2000785A5D /* FavoriteDestinationViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		2769420329F259FB0097EF14 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				2769420429F25A120097EF14 /* MockTransferDestinationService.swift */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		2769420629F25F830097EF14 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2769420729F25FB10097EF14 /* TransferDestination+Default.swift */,
-				2769420929F2600E0097EF14 /* Person+Default.swift */,
-				2769420B29F260710097EF14 /* Card+Default.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		277CFA2A29F0E00000C4B45F = {
@@ -108,7 +101,6 @@
 			children = (
 				276941FD29F164A50097EF14 /* blue-TestCase.xctestplan */,
 				277CFA3529F0E00000C4B45F /* blue-TestCase */,
-				277CFA4629F0E00200C4B45F /* blue-TestCaseTests */,
 				277CFA3429F0E00000C4B45F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,7 +122,10 @@
 				277CFA6029F0E14B00C4B45F /* Model */,
 				277CFA3629F0E00000C4B45F /* blue_TestCaseApp.swift */,
 				277CFA3829F0E00000C4B45F /* ContentView.swift */,
+				2725FD3529FB918C00785A5D /* FileController.swift */,
+				2725FD3329FB916B00785A5D /* SampleAPIData.geojson */,
 				277CFA3A29F0E00100C4B45F /* Assets.xcassets */,
+				AD2C75A929F81E6400EA9240 /* blue-TestCaseTests */,
 				277CFA3C29F0E00100C4B45F /* Preview Content */,
 			);
 			path = "blue-TestCase";
@@ -142,18 +137,6 @@
 				277CFA3D29F0E00100C4B45F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		277CFA4629F0E00200C4B45F /* blue-TestCaseTests */ = {
-			isa = PBXGroup;
-			children = (
-				2769420629F25F830097EF14 /* Extension */,
-				2769420329F259FB0097EF14 /* Mock */,
-				277CFA4729F0E00200C4B45F /* blue_TestCaseTests.swift */,
-				277CFA6B29F0E61D00C4B45F /* TransferDestinationServiceTests.swift */,
-				2769420129F16B3C0097EF14 /* TransferDestinationListViewModelTests.swift */,
-			);
-			path = "blue-TestCaseTests";
 			sourceTree = "<group>";
 		};
 		277CFA6029F0E14B00C4B45F /* Model */ = {
@@ -171,8 +154,40 @@
 				277CFA6729F0E26E00C4B45F /* TransferDestinationListView.swift */,
 				27EE795129F286BA00D7DEAF /* TransferDestinationRowView.swift */,
 				27EE795329F294B800D7DEAF /* TransferDestinationDetailView.swift */,
+				271459C729FBEDD30060E180 /* FavoriteDestinationListView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AD2C75A929F81E6400EA9240 /* blue-TestCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD2C75AA29F81E6500EA9240 /* TransferDestinationListViewModelTests.swift */,
+				AD2C75AB29F81E6500EA9240 /* Extension */,
+				AD2C75AF29F81E6500EA9240 /* Mock */,
+				AD2C75B129F81E6500EA9240 /* TransferDestinationServiceTests.swift */,
+				AD2C75B229F81E6500EA9240 /* blue_TestCaseTests.swift */,
+				2725FD3929FB9F6C00785A5D /* FavoriteDestinationViewModelTests.swift */,
+			);
+			path = "blue-TestCaseTests";
+			sourceTree = SOURCE_ROOT;
+		};
+		AD2C75AB29F81E6500EA9240 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD2C75AC29F81E6500EA9240 /* Person+Default.swift */,
+				AD2C75AD29F81E6500EA9240 /* Card+Default.swift */,
+				AD2C75AE29F81E6500EA9240 /* TransferDestination+Default.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AD2C75AF29F81E6500EA9240 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AD2C75B029F81E6500EA9240 /* MockTransferDestinationService.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277CFA3E29F0E00100C4B45F /* Preview Assets.xcassets in Resources */,
+				2725FD3429FB916B00785A5D /* SampleAPIData.geojson in Resources */,
 				277CFA3B29F0E00100C4B45F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,9 +294,12 @@
 				277CFA3929F0E00000C4B45F /* ContentView.swift in Sources */,
 				277CFA6A29F0E31200C4B45F /* TransferDestinationService.swift in Sources */,
 				277CFA6229F0E16F00C4B45F /* TransferDestination.swift in Sources */,
+				2725FD3629FB918C00785A5D /* FileController.swift in Sources */,
 				27EE795429F294B800D7DEAF /* TransferDestinationDetailView.swift in Sources */,
 				277CFA6829F0E26E00C4B45F /* TransferDestinationListView.swift in Sources */,
 				27EE795229F286BA00D7DEAF /* TransferDestinationRowView.swift in Sources */,
+				2725FD3829FB9E2000785A5D /* FavoriteDestinationViewModel.swift in Sources */,
+				271459C829FBEDD30060E180 /* FavoriteDestinationListView.swift in Sources */,
 				2769420029F16AA30097EF14 /* TransferDestinationListViewModel.swift in Sources */,
 				277CFA3729F0E00000C4B45F /* blue_TestCaseApp.swift in Sources */,
 			);
@@ -290,13 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277CFA4829F0E00200C4B45F /* blue_TestCaseTests.swift in Sources */,
-				2769420529F25A120097EF14 /* MockTransferDestinationService.swift in Sources */,
-				2769420229F16B3C0097EF14 /* TransferDestinationListViewModelTests.swift in Sources */,
-				2769420829F25FB10097EF14 /* TransferDestination+Default.swift in Sources */,
-				2769420A29F2600E0097EF14 /* Person+Default.swift in Sources */,
-				2769420C29F260710097EF14 /* Card+Default.swift in Sources */,
-				277CFA6C29F0E61D00C4B45F /* TransferDestinationServiceTests.swift in Sources */,
+				AD2C75BF29F81EA500EA9240 /* Card+Default.swift in Sources */,
+				AD2C75BA29F81E8400EA9240 /* blue_TestCaseTests.swift in Sources */,
+				AD2C75BD29F81EA500EA9240 /* Person+Default.swift in Sources */,
+				2725FD3A29FB9F6C00785A5D /* FavoriteDestinationViewModelTests.swift in Sources */,
+				AD2C75BC29F81EA500EA9240 /* MockTransferDestinationService.swift in Sources */,
+				AD2C75C029F81EA500EA9240 /* TransferDestinationListViewModelTests.swift in Sources */,
+				AD2C75C129F81EA500EA9240 /* TransferDestination+Default.swift in Sources */,
+				AD2C75BE29F81EA500EA9240 /* TransferDestinationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +448,7 @@
 		277CFA5829F0E00200C4B45F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +479,7 @@
 		277CFA5929F0E00200C4B45F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -493,7 +515,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A83GL7V668;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
@@ -515,7 +537,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A83GL7V668;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
