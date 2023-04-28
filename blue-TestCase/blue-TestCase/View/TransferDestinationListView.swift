@@ -13,7 +13,6 @@ struct TransferDestinationListView<ViewModel: TransferDestinationListViewModelPr
     
     var body: some View {
         
-        NavigationStack {
         List {
             ForEach($viewModel.destinationList) { item in
                 NavigationLink {
